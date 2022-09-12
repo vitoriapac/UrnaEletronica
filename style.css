@@ -1,3 +1,15 @@
+@keyframes pisca {
+  0% {
+    opacity: 0.2;
+  }
+  50& {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
 body {
   margin: 0;
   display: flex;
@@ -17,6 +29,8 @@ body {
   height: 20rem;
   background: linear-gradient(to right, #e8e8e8, #c1c1c1);
   border: 2px solid #777;
+  display: flex;
+  flex-direction: column;
 }
 
 .teclado {
@@ -65,4 +79,60 @@ body {
   font-weight: bold;
   width: 5.7rem;
   height: 3.125rem;
+}
+
+.d-1 {
+  flex: 1;
+  display: flex;
+}
+
+.d1-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.25rem;
+}
+
+.d1-1 {
+  height: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d1-2 {
+  height: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d1-3 {
+  height: 3.125rem;
+}
+
+.numero {
+  display: inline-block;
+  width: 2rem;
+  height: 2.5rem;
+  border: 2px solid #403a3a;
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.d1-4 {
+  flex: 1;
+  line-height: 2rem;
+}
+
+.d1-right {
+  width: 5.7em;
+}
+
+.d-2 {
+  height: 3.75rem;
+  font-size: 1rem;
+  border-top: 2px solid #403a3a;
+  padding-left: 0.5rem;
 }
